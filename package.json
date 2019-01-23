@@ -12,7 +12,6 @@
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
-
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +22,7 @@
     "mongoose": "^5.4.3",
     "nodemon": "^1.18.9",
     "passport": "^0.4.0",
-    "passport-google-oauth20": "^1.0.0"
+    "passport-google-oauth20": "^1.0.0",
+    "react-stripe-checkout": "^2.6.3"
   }
 }
