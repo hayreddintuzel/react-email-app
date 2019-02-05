@@ -10,7 +10,7 @@ class SurveyForm extends Component {
     renderFields() {
         return _.map(formFields, field => {
             return (
-            <Field
+            <Field key={field.name}
                 component={SurveyField}
                 type="text"
                 label={field.label}
@@ -48,8 +48,7 @@ function validate(values) {
         }
     });
 
-    errors.emails = validateEmails(values.emails || '');
-
+    errors.recipients = validateEmails(values.recipients || '');
 
     return errors;
 }
